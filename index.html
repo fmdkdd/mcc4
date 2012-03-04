@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="fmdkdd" />
+
+    <title>Monte Carlo Connect Four &mdash; fmdkdd</title>
+    <script src="mcc4.js"></script>
+    <link rel="stylesheet" href="mcc4.css" />
+  </head>
+  <body>
+    <div id="content">
+      <h1>Monte Carlo Connect Four</h1>
+
+      <div id="boardArea">
+        <div id="canvases">
+          <canvas id="pieces" width="700" height="600"></canvas>
+          <canvas id="board" width="700" height="600"></canvas>
+          <canvas id="highlight" width="700" height="600"></canvas>
+        </div>
+
+        <input id="newGame" type="button" value="New Game" />
+      </div>
+
+      <div id="msgArea">
+        <ul>
+          <li>Wins<br /><span id="wins">0</span></li>
+          <li>Losses<br /><span id="losses">0</span></li>
+          <li>Draws<br /><span id="draws">0</span></li>
+        </ul>
+
+        <ul id="difficulty">
+          <li>Difficulty<br />
+            <span id="diffValue">35</span>
+          </li>
+          <li>
+            <input type="range" min="0" max="500" step="1" value="35"
+                   id="diffRange" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

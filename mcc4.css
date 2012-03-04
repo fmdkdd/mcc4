@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #666;
+	background-color: #eee;
+	font-family: 'Ubuntu', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	margin: 0 1em;
+}
+
+h1 {
+	text-align: left;
+	margin: .5em;
+
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+#content {
+	max-width: 1200px;
+	margin: auto;
+}
+
+#boardArea {
+	width: 700px;
+	margin-right: 2em;
+	margin-bottom: 2em;
+	float: left;
+}
+
+#msgArea {
+	float: left;
+}
+
+#msgArea ul {
+	list-style: none;
+}
+
+#msgArea ul li {
+	float: left;
+	margin-right: 2em;
+	text-align: center;
+	font-size: 2em;
+}
+
+#difficulty {
+	margin-top: 12em;
+}
+
+#difficulty {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+#diffRange {
+	vertical-align: middle;
+	width: 200px;
+}
+
+#canvases {
+	height: 600px;
+	position: relative;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 30px;
+	box-shadow: 0 0 5px hsl(190, 20%, 40%);
+}
+
+#newGame {
+	display: block;
+
+	margin: auto;
+	margin-top: 1em;
+
+	height: 2em;
+	width: 8em;
+	font-size: 2em;
+	font-family: 'Ubuntu', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+
+	color: #666;
+}
