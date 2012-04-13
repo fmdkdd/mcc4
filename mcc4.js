@@ -299,107 +299,19 @@
 			return connected;
 		}
 
-		// Find connected four in column
-		// var connected = [];
-		// var row = lastMove.row;
-		// while (row >= 0 && this.movesGrid[lastMove.column][row] === lastMove.player) {
-		// 	connected.push({
-		// 		'row': row,
-		// 		'column': lastMove.column
-		// 	});
-		// 	--row;
-		// }
-
 		var inColumn = find(1, 0);
-
 		if (inColumn.length >= boardRules.connect)
 			return inColumn;
 
-		// Find connected four in row
-		// connected = [];
-		// var col = lastMove.column;
-		// while (col < boardRules.columns
-		// 		 && this.movesGrid[col][lastMove.row] === lastMove.player) {
-		// 	connected.push({
-		// 		'row': lastMove.row,
-		// 		'column': col
-		// 	});
-		// 	++col;
-		// }
-
-		// col = lastMove.column - 1;
-		// while (col >= 0 && this.movesGrid[col][lastMove.row] === lastMove.player) {
-		// 	connected.push({
-		// 		'row': lastMove.row,
-		// 		'column': col
-		// 	});
-		// 	--col;
-		// }
-
 		var inRow = find(0, 1);
-
 		if (inRow.length >= boardRules.connect)
 			return inRow;
 
-		// Find connected four in up-left -> down-right diagonal
-		// connected = [];
-		// row = lastMove.row;
-		// col = lastMove.column;
-		// while (col < boardRules.columns
-		// 		 && row >= 0 && this.movesGrid[col][row] === lastMove.player) {
-		// 	connected.push({
-		// 		'row': row,
-		// 		'column': col
-		// 	});
-		// 	++col;
-		// 	--row;
-		// }
-
-		// col = lastMove.column - 1;
-		// row = lastMove.row + 1;
-		// while (col >= 0 && row < this.movesGrid[col].length
-		// 		 && this.movesGrid[col][row] === lastMove.player) {
-		// 	connected.push({
-		// 		'row': row,
-		// 		'column': col
-		// 	});
-		// 	--col;
-		// 	++row;
-		// }
-
 		var inDiag1 = find(-1, 1);
-
 		if (inDiag1.length >= boardRules.connect)
 			return inDiag1;
 
-		// Find connected four in down-left -> up-right diagonal
-		// connected = [];
-		// row = lastMove.row;
-		// col = lastMove.column;
-		// while (col < boardRules.columns
-		// 		 && row < this.movesGrid[col].length
-		// 		 && this.movesGrid[col][row] === lastMove.player) {
-		// 	connected.push({
-		// 		'row': row,
-		// 		'column': col
-		// 	});
-		// 	++col;
-		// 	++row;
-		// }
-
-		// col = lastMove.column - 1;
-		// row = lastMove.row - 1;
-		// while (col >= 0 && row >= 0 && this.movesGrid[col][row] === lastMove.player) {
-		// 	connected.push({
-		// 		'row': row,
-		// 		'column': col
-		// 	});
-		// 	--col;
-		// 	--row;
-		// }
-
 		var inDiag2 = find(1, 1);
-
 		if (inDiag2.length >= boardRules.connect)
 			return inDiag2;
 
